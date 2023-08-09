@@ -5,6 +5,8 @@ import { CoursesRoutingModule } from './courses-routing.module';
 import { CoursesComponent } from './courses/courses.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [CoursesComponent],
@@ -14,6 +16,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatTableModule,
     MatCardModule,
     MatToolbarModule,
+    MatProgressSpinnerModule,
+    SharedModule,
   ],
 })
 export class CoursesModule {}
