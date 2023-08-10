@@ -8,6 +8,6 @@ import { CategoryPipe } from './pipes/category.pipe';
 @NgModule({
   declarations: [ErrorDialogComponent, CategoryPipe],
   imports: [CommonModule, MatDialogModule],
-  exports: [ErrorDialogComponent, MatButtonModule],
+  exports: [ErrorDialogComponent, MatButtonModule, CategoryPipe],
 })
 export class SharedModule {}

@@ -1,12 +1,16 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'category'
+  name: 'category',
 })
 export class CategoryPipe implements PipeTransform {
-
-  transform(value: unknown, ...args: unknown[]): unknown {
-    return null;
+  transform(value: string): string {
+    switch (value) {
+      case 'Tec Dev Fullstack':
+        return 'computer';
+      case 'Tec Dev Flutter':
+        return 'code';
+    }
+    return 'code';
   }
-
 }
